@@ -1,0 +1,12 @@
+.codeBlock {
+  -webkit-overflow-scrolling: touch;
+  background: #FCFBFA;
+  border-left: solid 3px #ECEAE9;
+  box-sizing: border-box;
+  display: block;
+  font-size: .875em;
+  margin: .5rem 0;
+  overflow-y: scroll;
+  padding: .5rem 8px .5rem 12px;
+  white-space: pre;
+}
