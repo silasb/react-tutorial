@@ -4,19 +4,19 @@ import CodeBlock from '../components/code-blocks'
 const Classes1 = () => (
   <CodeBlock lang="javascript">
 {`
-  class Test {
-    constructor() {
-      this.test = 'hello'
-    }
-
-    hello() {
-      return this.test
-    }
+class Test {
+  constructor() {
+    this.test = 'hello'
   }
 
-  const test = new Test;
-  document.write(test.hello())
-  console.log('hello')
+  hello() {
+    return this.test
+  }
+}
+
+const test = new Test;
+document.write(test.hello())
+console.log('hello')
 `}
   </CodeBlock>
 )
