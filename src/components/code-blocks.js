@@ -1,6 +1,4 @@
-/* global hljs, React */
 import React from 'react';
-// import hljs from 'hljs';o
 
 import './code-block.css';
 

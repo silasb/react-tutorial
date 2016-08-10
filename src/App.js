@@ -10,7 +10,6 @@ class App extends Component {
           <h2>ES6 Classes</h2>
         </div>
         <div className="contents">
-
           <CodeBlock lang="javascript" ref="code">
 {`
 class Test {
