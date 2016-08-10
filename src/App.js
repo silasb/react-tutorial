@@ -2,18 +2,7 @@ import React, { Component } from 'react';
 import CodeBlock from './components/code-blocks'
 import './App.css';
 
-
 class App extends Component {
-  run() {
-    const html = this.refs.code.refs.code.innerText
-
-    const iframe = this.refs.iframe.contentWindow
-    iframe.eval(html)
-
-    // eslint-disable-next-line no-eval
-    // eval(html)
-  }
-
   render() {
     return (
       <div className="App">
@@ -36,20 +25,24 @@ class Test {
 
 const test = new Test;
 document.write(test.hello())
+console.log('hello')
 `}
           </CodeBlock>
 
-          <CodeBlock lang="javascript">
+          <CodeBlock lang="html">
 {`
-puts("hello world")
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/immutable/3.8.1/immutable.js"></script>
+  <script>
+    window.hello = function() {
+      console.log('hell2')
+    }
+    console.log('hello')
+  </script>
+
+  <p>hello</p>
 `}
           </CodeBlock>
 
-          <button onClick={this.run.bind(this)}>Run</button>
-
-          <hr/>
-
-          <iframe className="iframe" ref="iframe"></iframe>
         </div>
       </div>
     );
