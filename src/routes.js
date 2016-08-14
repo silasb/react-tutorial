@@ -3,6 +3,11 @@ import Home from './components/Home'
 
 import Example1 from './examples/Example1';
 import Classes1 from './examples/Classes1';
+import Anonymous from './examples/Anonymous';
+import ES2015ArrayMap from './examples/es2015_array_maps';
+import ES2015ArrayFilter from './examples/es2015_array_filter';
+import ES2015ArrayFind from './examples/es2015_array_find';
+import ObjectDestruction from './examples/object_destruction';
 
 const routes = {
   path: '/',
@@ -10,6 +15,11 @@ const routes = {
   indexRoute: { component: Home },
   childRoutes: [
     { path: 'classes1', component: Classes1 },
+    { path: 'anonymous', component: Anonymous},
+    { path: 'array_maps', component: ES2015ArrayMap},
+    { path: 'array_filters', component: ES2015ArrayFilter},
+    { path: 'array_find', component: ES2015ArrayFind},
+    { path: 'object_destruction', component: ObjectDestruction},
     { path: 'example1', component: Example1 },
   ]
 }
