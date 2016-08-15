@@ -23,20 +23,24 @@ export default React.createClass({
     return this.props.children !== nextProps.children;
   },
 
-  run: function (type = 'javascript') {
+  run: function () {
     const iframe = this.refs.iframe
     const iframeWin = iframe.contentWindow
-    const iframeDoc = iframe.contentDocument
+
+    const type = this.props.lang
 
     if (type === 'javascript') {
+      iframeWin.document.body.innerHTML = ''
       iframeWin.eval(this.code)
     } else if (type === 'html') {
-      iframeDoc.open()
-      iframeDoc.write(this.code)
+      iframe.srcdoc = this.code
     }
+  },
 
-    // eslint-disable-next-line no-eval
-    // eval(html)
+  clear: function () {
+    const iframe = this.refs.iframe
+
+    iframe.srcdoc = ''
   },
 
   render: function () {
@@ -59,11 +63,12 @@ export default React.createClass({
           <code ref="code" className="codeBlock" dangerouslySetInnerHTML={{__html:children}} />
         </pre>
 
-        <button onClick={this.run.bind(this, this.props.lang)}>Run</button>
+        <button onClick={this.run}>Run</button>
+        <button onClick={this.clear}>Clear</button>
 
         <hr/>
 
-        <iframe id={lang} className="iframe" ref="iframe"></iframe>
+        <iframe id={lang} className="iframe" ref="iframe" />
       </div>
     );
   }
