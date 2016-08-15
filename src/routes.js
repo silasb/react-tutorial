@@ -8,6 +8,8 @@ import ES2015ArrayMap from './examples/es2015_array_maps';
 import ES2015ArrayFilter from './examples/es2015_array_filter';
 import ES2015ArrayFind from './examples/es2015_array_find';
 import ObjectDestruction from './examples/object_destruction';
+import ComponentWithoutJSX from './examples/component_without_jsx';
+import ComponentWithJSX from './examples/component_with_jsx';
 
 const routes = {
   path: '/',
@@ -20,6 +22,8 @@ const routes = {
     { path: 'array_filters', component: ES2015ArrayFilter},
     { path: 'array_find', component: ES2015ArrayFind},
     { path: 'object_destruction', component: ObjectDestruction},
+    { path: 'component_without_jsx', component: ComponentWithoutJSX},
+    { path: 'component_with_jsx', component: ComponentWithJSX},
     { path: 'example1', component: Example1 },
   ]
 }
