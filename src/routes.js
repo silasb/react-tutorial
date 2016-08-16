@@ -7,6 +7,8 @@ import Anonymous from './examples/Anonymous';
 import ES2015ArrayMap from './examples/es2015_array_maps';
 import ES2015ArrayFilter from './examples/es2015_array_filter';
 import ES2015ArrayFind from './examples/es2015_array_find';
+import LetAndConst from './examples/LetAndConst';
+import BindAndThis from './examples/BindAndThis';
 import ObjectDestruction from './examples/object_destruction';
 import ComponentWithoutJSX from './examples/component_without_jsx';
 import ComponentWithJSX from './examples/component_with_jsx';
@@ -22,6 +24,8 @@ const routes = {
     { path: 'array_filters', component: ES2015ArrayFilter},
     { path: 'array_find', component: ES2015ArrayFind},
     { path: 'object_destruction', component: ObjectDestruction},
+    { path: 'let_and_const', component: LetAndConst},
+    { path: 'bind_and_this', component: BindAndThis},
     { path: 'component_without_jsx', component: ComponentWithoutJSX},
     { path: 'component_with_jsx', component: ComponentWithJSX},
     { path: 'example1', component: Example1 },
