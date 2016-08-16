@@ -31,7 +31,7 @@ export default React.createClass({
 
     if (type === 'javascript') {
       iframeWin.document.body.innerHTML = ''
-      iframeWin.eval(this.code)
+      iframeWin.eval('(function(){'+this.code+'})()')
     } else if (type === 'html') {
       iframe.srcdoc = this.code
     }
