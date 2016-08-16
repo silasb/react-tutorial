@@ -38,6 +38,12 @@
   color: white;
 }
 
+.App-header a {
+  font-size: 2.5em;
+  color: blue;
+  text-decoration: none;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

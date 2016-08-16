@@ -21,13 +21,13 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <a href="" onClick={this.handleClick.bind(this, 'previous')}>
-            <i className="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
+            «
           </a>
 
           <h2>{title}</h2>
 
-          <a href="" onClick={this.handleClick.bind(this, 'next')}>
-            <i className="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
+          <a href="" title="next" onClick={this.handleClick.bind(this, 'next')}>
+            »
           </a>
         </div>
         <div className="contents">
