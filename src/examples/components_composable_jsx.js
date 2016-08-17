@@ -22,7 +22,7 @@ const ComponentComposableJSX = () => (
   )
 
   ReactDOM.render(
-    <Layout href={'https://www.oclc.org'} name='OCLC' />
+    <Layout href='https://www.oclc.org' name='OCLC' />
     , document.getElementById('root')
   )
 </script>

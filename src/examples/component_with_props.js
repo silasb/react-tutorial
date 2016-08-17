@@ -13,7 +13,7 @@ const ComponentWithProps = () => (
   const Component = (props) => <p>{props.some_variable}</p>
 
   ReactDOM.render(
-    <Component some_variable={'hello'} />,
+    <Component some_variable='hello' />,
     document.getElementById('root')
   )
 </script>
