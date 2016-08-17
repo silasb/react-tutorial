@@ -14,6 +14,8 @@ import ComponentWithoutJSX from './examples/component_without_jsx';
 import ComponentComposable from './examples/components_composable';
 import ComponentComposableJSX from './examples/components_composable_jsx';
 import ComponentWithJSX from './examples/component_with_jsx';
+import ComponentWithProps from './examples/component_with_props';
+import StatefulComponent from './examples/stateful_component';
 
 const routes = {
   path: '/',
@@ -30,6 +32,8 @@ const routes = {
     { path: 'bind_and_this', component: BindAndThis},
     { path: 'component_without_jsx', component: ComponentWithoutJSX},
     { path: 'component_with_jsx', component: ComponentWithJSX},
+    { path: 'component_with_with_props', component: ComponentWithProps},
+    { path: 'stateful_component', component: StatefulComponent},
     { path: 'composable_components', component: ComponentComposable},
     { path: 'composable_components_jsx', component: ComponentComposableJSX},
     { path: 'example1', component: Example1 },
