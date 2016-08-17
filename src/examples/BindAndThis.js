@@ -3,7 +3,8 @@ import CodeBlock from '../components/code-blocks'
 
 const BindAndThis = () => (
   <CodeBlock lang="javascript">
-{`const obj = { a: 'hello'}
+{`const obj = { a: 'hello' }
+window.a = 'ROAR'
 function func1() { document.write(this.a) }
 function func2() { document.write(this.a) }
 
@@ -12,7 +13,6 @@ boundedFunc1()
 document.write('<br/>')
 func2()
 document.write('<br/>')
-func2.call(obj)
 `}
   </CodeBlock>
 )

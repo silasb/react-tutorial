@@ -1,5 +1,6 @@
 import App from './App';
 import Home from './components/Home'
+import Stop from './components/Stop'
 
 import Example1 from './examples/Example1';
 import Classes1 from './examples/Classes1';
@@ -7,11 +8,11 @@ import Anonymous from './examples/Anonymous';
 import ES2015ArrayMap from './examples/es2015_array_maps';
 import ES2015ArrayFilter from './examples/es2015_array_filter';
 import ES2015ArrayFind from './examples/es2015_array_find';
-import LetAndConst from './examples/LetAndConst';
+// import LetAndConst from './examples/LetAndConst';
 import BindAndThis from './examples/BindAndThis';
 import ObjectDestruction from './examples/object_destruction';
 import ComponentWithoutJSX from './examples/component_without_jsx';
-import ComponentComposable from './examples/components_composable';
+// import ComponentComposable from './examples/components_composable';
 import ComponentComposableJSX from './examples/components_composable_jsx';
 import ComponentWithJSX from './examples/component_with_jsx';
 import ComponentWithProps from './examples/component_with_props';
@@ -28,13 +29,15 @@ const routes = {
     { path: 'array_filters', component: ES2015ArrayFilter},
     { path: 'array_find', component: ES2015ArrayFind},
     { path: 'object_destruction', component: ObjectDestruction},
-    { path: 'let_and_const', component: LetAndConst},
+    // { path: 'let_and_const', component: LetAndConst},
     { path: 'bind_and_this', component: BindAndThis},
+    { path: 'stop_2', component: Stop},
     { path: 'component_without_jsx', component: ComponentWithoutJSX},
     { path: 'component_with_jsx', component: ComponentWithJSX},
     { path: 'component_with_with_props', component: ComponentWithProps},
     { path: 'stateful_component', component: StatefulComponent},
-    { path: 'composable_components', component: ComponentComposable},
+    { path: 'stop_2', component: Stop},
+    // { path: 'composable_components', component: ComponentComposable},
     { path: 'composable_components_jsx', component: ComponentComposableJSX},
     { path: 'example1', component: Example1 },
   ]

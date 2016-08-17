@@ -9,15 +9,13 @@ const ObjectDesstruction = () => (
   key3: 'key3'
 }
 
-const {key1} = data
-const func1 = ({importantKey}) => importantKey
+const {key1} = data /* var key1 = data.key1 */
 
 document.write(key1)
 document.write("<br/>")
-document.write(func1({
-  key1: 'key1',
-  importantKey: 'importantKey'
-}))
+
+const func1 = ({key3}) => key3 /* var func1 = function func1(_ref) { var key3 = _ref.key3; return key3 } */
+document.write(func1(data))
 `}
   </CodeBlock>
 )

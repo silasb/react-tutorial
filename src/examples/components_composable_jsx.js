@@ -11,19 +11,19 @@ const ComponentComposableJSX = () => (
 
 <script type="text/babel">
 
-  const Parent = (props) => (
-    <div style={{color: 'blue'}}>{props.children}</div>
+  const Layout = (props) => (
+    <div>
+      <PageLink href={props.href} name={props.name} />
+    </div>
   )
 
-  const Child = () => (
-    <p>hello world</p>
+  const PageLink = (props) => (
+    <a href={props.href}>{props.name}</a>
   )
 
   ReactDOM.render(
-    <Parent>
-      <Child />
-    </Parent>,
-    document.getElementById('root')
+    <Layout href={'https://www.oclc.org'} name='OCLC' />
+    , document.getElementById('root')
   )
 </script>
 `}
