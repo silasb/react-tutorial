@@ -29,11 +29,13 @@ export default React.createClass({
 
     const type = this.props.lang
 
+    const code = this.code + '<style>* { font-size: 1.2rem; }</style>'
+
     if (type === 'javascript') {
       iframeWin.document.body.innerHTML = ''
-      iframeWin.eval('(function(){'+this.code+'})()')
+      iframeWin.eval('(function(){'+code+'})()')
     } else if (type === 'html') {
-      iframe.srcdoc = this.code
+      iframe.srcdoc = code
     }
   },
 
