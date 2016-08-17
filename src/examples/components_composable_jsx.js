@@ -1,7 +1,7 @@
 import React from 'react';
 import CodeBlock from '../components/code-blocks'
 
-const ComponentWithJSX = () => (
+const ComponentComposableJSX = () => (
   <CodeBlock lang="html">
 {`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.0/react.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.0/react-dom.min.js"></script>
@@ -10,10 +10,19 @@ const ComponentWithJSX = () => (
 <div id="root"></div>
 
 <script type="text/babel">
-  const component = <p>hello</p>
-  
+
+  const Parent = (props) => (
+    <div style={{color: 'blue'}}>{props.children}</div>
+  )
+
+  const Child = () => (
+    <p>hello world</p>
+  )
+
   ReactDOM.render(
-    component,
+    <Parent>
+      <Child />
+    </Parent>,
     document.getElementById('root')
   )
 </script>
@@ -21,5 +30,5 @@ const ComponentWithJSX = () => (
   </CodeBlock>
 )
 
-ComponentWithJSX.title = "Component (JSX)"
-export default ComponentWithJSX
+ComponentComposableJSX.title = "Composable Components (JSX)"
+export default ComponentComposableJSX

@@ -11,6 +11,8 @@ import LetAndConst from './examples/LetAndConst';
 import BindAndThis from './examples/BindAndThis';
 import ObjectDestruction from './examples/object_destruction';
 import ComponentWithoutJSX from './examples/component_without_jsx';
+import ComponentComposable from './examples/components_composable';
+import ComponentComposableJSX from './examples/components_composable_jsx';
 import ComponentWithJSX from './examples/component_with_jsx';
 
 const routes = {
@@ -28,6 +30,8 @@ const routes = {
     { path: 'bind_and_this', component: BindAndThis},
     { path: 'component_without_jsx', component: ComponentWithoutJSX},
     { path: 'component_with_jsx', component: ComponentWithJSX},
+    { path: 'composable_components', component: ComponentComposable},
+    { path: 'composable_components_jsx', component: ComponentComposableJSX},
     { path: 'example1', component: Example1 },
   ]
 }
