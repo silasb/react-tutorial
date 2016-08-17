@@ -30,5 +30,5 @@ document.write(func5(9))
   </CodeBlock>
 )
 
-Anonymous.title = "ES6 Anonyous Functions"
+Anonymous.title = "ES2015 Anonyous Functions"
 export default Anonymous

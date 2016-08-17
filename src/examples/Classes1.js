@@ -19,5 +19,5 @@ document.write(test.hello())
   </CodeBlock>
 )
 
-Classes1.title = "ES6 Classes"
+Classes1.title = "ES2015 Classes"
 export default Classes1

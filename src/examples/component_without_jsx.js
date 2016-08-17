@@ -10,6 +10,7 @@ const ComponentWithoutJSX = () => (
 
 <script>
   const p = React.createElement('p', null, 'Content')
+
   ReactDOM.render(
     p,
     document.getElementById('root')
@@ -19,5 +20,5 @@ const ComponentWithoutJSX = () => (
   </CodeBlock>
 )
 
-ComponentWithoutJSX.title = "Component 1"
+ComponentWithoutJSX.title = "Component - First Taste"
 export default ComponentWithoutJSX

@@ -2,7 +2,7 @@ import App from './App';
 import Home from './components/Home'
 import Stop from './components/Stop'
 
-import Example1 from './examples/Example1';
+// import Example1 from './examples/Example1';
 import Classes1 from './examples/Classes1';
 import Anonymous from './examples/Anonymous';
 import ES2015ArrayMap from './examples/es2015_array_maps';
@@ -31,7 +31,7 @@ const routes = {
     { path: 'object_destruction', component: ObjectDestruction},
     // { path: 'let_and_const', component: LetAndConst},
     { path: 'bind_and_this', component: BindAndThis},
-    { path: 'stop_2', component: Stop},
+    { path: 'stop_1', component: Stop},
     { path: 'component_without_jsx', component: ComponentWithoutJSX},
     { path: 'component_with_jsx', component: ComponentWithJSX},
     { path: 'component_with_with_props', component: ComponentWithProps},
@@ -39,7 +39,8 @@ const routes = {
     { path: 'stop_2', component: Stop},
     // { path: 'composable_components', component: ComponentComposable},
     { path: 'composable_components_jsx', component: ComponentComposableJSX},
-    { path: 'example1', component: Example1 },
+
+    // { path: 'example1', component: Example1 },
   ]
 }
 
