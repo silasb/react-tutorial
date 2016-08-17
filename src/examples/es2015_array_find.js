@@ -19,5 +19,5 @@ document.write(JSON.stringify(onlyThree))
   </CodeBlock>
 )
 
-ES2015ArrayFind.title = "ES6 Array Find"
+ES2015ArrayFind.title = "ES2015 Array Find"
 export default ES2015ArrayFind

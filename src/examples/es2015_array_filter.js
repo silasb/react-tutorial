@@ -19,5 +19,5 @@ document.write(JSON.stringify(onlyEven))
   </CodeBlock>
 )
 
-ES2015ArrayFilter.title = "ES6 Array Filter"
+ES2015ArrayFilter.title = "ES2015 Array Filter"
 export default ES2015ArrayFilter

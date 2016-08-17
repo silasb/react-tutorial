@@ -14,5 +14,5 @@ document.write(dataSquared)
   </CodeBlock>
 )
 
-ES2015ArrayMaps.title = "ES6 Array Maps"
+ES2015ArrayMaps.title = "ES2015 Array Maps"
 export default ES2015ArrayMaps
