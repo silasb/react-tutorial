@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { browserHistory } from 'react-router'
+import { IndexLink, browserHistory } from 'react-router'
 import { nextRoute, previousRoute } from './routes'
 
 import './App.css';
@@ -20,6 +20,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
+          <IndexLink to='/' style={{float: 'left'}}>H</IndexLink>
+
           <a href="" onClick={this.handleClick.bind(this, 'previous')}>
             «
           </a>
