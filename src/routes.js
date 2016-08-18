@@ -36,10 +36,9 @@ const routes = {
     { path: 'component_with_jsx', component: ComponentWithJSX},
     { path: 'component_with_with_props', component: ComponentWithProps},
     { path: 'stateful_component', component: StatefulComponent},
-    { path: 'stop_2', component: Stop},
     // { path: 'composable_components', component: ComponentComposable},
     { path: 'composable_components_jsx', component: ComponentComposableJSX},
-
+    { path: 'stop_2', component: Stop},
     // { path: 'example1', component: Example1 },
   ]
 }

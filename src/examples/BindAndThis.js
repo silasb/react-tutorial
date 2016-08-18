@@ -6,12 +6,12 @@ const BindAndThis = () => (
 {`const obj = { a: 'hello' }
 window.a = 'ROAR'
 function func1() { document.write(this.a) }
-function func2() { document.write(this.a) }
 
 const boundedFunc1 = func1.bind(obj)
 boundedFunc1()
 document.write('<br/>')
-func2()
+
+func1()
 document.write('<br/>')
 `}
   </CodeBlock>

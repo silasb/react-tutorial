@@ -9,7 +9,7 @@ const ComponentWithoutJSX = () => (
 <div id="root"></div>
 
 <script>
-  const p = React.createElement('p', null, 'Content')
+  const p = React.createElement('p', null, 'ContentDM')
 
   ReactDOM.render(
     p,

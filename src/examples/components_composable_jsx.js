@@ -13,16 +13,17 @@ const ComponentComposableJSX = () => (
 
   const Layout = (props) => (
     <div>
-      <PageLink href={props.href} name={props.name} />
+      {props.name}
+      <PageLink href='https://www.oclc.org' name={props.name} />
     </div>
   )
 
-  const PageLink = (props) => (
-    <a href={props.href}>{props.name}</a>
+  const PageLink = ({href, name}) => (
+    <a href={href}>{name}</a>
   )
 
   ReactDOM.render(
-    <Layout href='https://www.oclc.org' name='OCLC' />
+    <Layout name='OCLC' />
     , document.getElementById('root')
   )
 </script>

@@ -7,7 +7,7 @@ const ES2015ArrayMaps = () => (
   1, 2, 3, 4, 5
 ]
 
-const dataSquared = data.map((m, i) => m * 2)
+const dataSquared = data.map((m) => m * 2)
 
 document.write(dataSquared)
 `}

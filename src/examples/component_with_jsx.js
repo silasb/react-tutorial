@@ -10,10 +10,10 @@ const ComponentWithJSX = () => (
 <div id="root"></div>
 
 <script type="text/babel">
-  const component = <p>hello</p>
-  
+  const p = <p>hello</p>
+
   ReactDOM.render(
-    component,
+    p,
     document.getElementById('root')
   )
 </script>

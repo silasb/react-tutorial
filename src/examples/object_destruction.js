@@ -9,7 +9,7 @@ const ObjectDesstruction = () => (
   key3: 'key3'
 }
 
-const {key1} = data /* var key1 = data.key1 */
+const {key1, key3} = data /* var key1 = data.key1; var key3 = data.key3; */
 
 document.write(key1)
 document.write("<br/>")
